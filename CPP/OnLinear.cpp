@@ -3,22 +3,16 @@
 
 using namespace std;
 
-void FindNemo(string array[])
-{
-    for (size_t i = 0; i < sizeof(array); i++)
-    {
-        if (array[i] == "nemo")
-            cout << "Found Nemo!"; 
-    }
-}
 
 int main()
 {
     string nemo[] = {"bruce", "dory", "marlin", "nigel", "squirt", "darla", "hank", "something", "gill", "nemo", "whatever"};
 
-    FindNemo(nemo);
-
-    cout << "End of the test";
+    for (size_t i = 0; i < sizeof(nemo); i++)
+    {
+        if (nemo[i] == "nemo")
+            cout << "Found Nemo!";
+    }
 
     return 0;
 }
